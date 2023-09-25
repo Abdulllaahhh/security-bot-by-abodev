@@ -106,25 +106,4 @@ async def command(ctx):
   await ctx.send(embed=embed)
 
 
-@bot.command()
-async def rules(ctx):
-  embed = discord.Embed(title='بەخێر بێن بۆ سێرڤەری Lucky Ibo',
-                        description='یاساکانی سێرڤەر',
-                        color=discord.Color.green())
-  embed.add_field(name='`رێزگرتن`', value='رێزگرتن لە سەروو هەموو شتێکەوەیە')
-  embed.add_field(name='`قسەی نەشیاو`',
-                  value='قسەی نەشیاو و دانانی وێنە و ڤیدیۆی نەشیاو قەدەغەیە.')
-  embed.add_field(name='`بەکارهێنانی بۆت`',
-                  value='بەکارهێنانی بۆت لە ڤۆیس و چاتە گشتییەکان قەدەغەیە')
-  embed.add_field(
-    name='`باسکردنی سیاسەت`',
-    value='باسکردنی سیاسەت و شارچییەتی بە هەموو شێوەیەك قەدەغەیە')
-  embed.add_field(name='` رۆڵ بە دەست`',
-                  value='تەداخول کردنی کاری رۆڵ بە دەست و کەسانی تر قەدەغەیە')
-  embed.add_field(name='`دانانی لینك `',
-                  value='دانانی رێکلام و لینك لە چاتی گشتی قەدەغەیە')
-  embed.set_image(url='https://i.gifer.com/VofE.gif')
-  await ctx.send(embed=embed)
-
-
 bot.run(Token)
